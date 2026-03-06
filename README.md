@@ -1,3 +1,3 @@
 # Ejercicio No. 1
 
-Estación Ambiental Multisensor con Arduino UNO R4 WiFi
+Este programa implementa una **estación básica de monitoreo ambiental** basada en un Arduino UNO R4 WiFi que integra múltiples sensores analógicos y digitales para observar las condiciones de una planta o entorno agrícola. El sistema adquiere datos de **calidad del aire (MQ135), presencia de gases combustibles (MQ9) y humedad del suelo** mediante entradas analógicas, mientras que la **temperatura y humedad ambiental** se obtienen con el sensor SI7021 y el **nivel de iluminación** con el sensor BH1750 a través del bus I2C. Durante la fase de inicialización se verifica la correcta conexión de los sensores digitales y, una vez validado el sistema, el programa realiza una **lectura periódica cada 2 segundos**, enviando todos los valores al **monitor serial** para permitir la supervisión en tiempo real del estado ambiental del sistema de sensores.
